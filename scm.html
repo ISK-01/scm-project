@@ -16,6 +16,22 @@
                 <div class="input-group">
                     <input type="password" id="password" placeholder="Password" required>
                 </div>
+                <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username && password) {
+                // Here you can add actual login logic
+                alert('Login successful');
+            } else {
+                alert('Please enter both username and password');
+            }
+        });
+    </script>
+
                 <button type="submit">Log In</button>
             </form>
         </div>
